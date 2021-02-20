@@ -1,45 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:gravity="center"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.254" />
+    <TableRow
+        style="@style/row"
+        android:layout_margin="0dp">
 
-    <EditText
-        android:id="@+id/et"
-        android:layout_width="297dp"
-        android:layout_height="43dp"
-        android:ems="10"
-        android:hint="Enter"
-        android:inputType="date"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.262" />
+        <Button
+            android:id="@+id/button1"
+            style="@style/btn"
+            android:onClick="clicked" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et"
-        app:layout_constraintVertical_bias="0.325" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/button2"
+            style="@style/btn"
+            android:onClick="clicked" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/btn"
+            android:onClick="clicked" />
+    </TableRow>
+
+
+    <TableRow
+        style="@style/row"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp">
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/btn"
+            android:onClick="clicked" />
+
+        <Button
+            android:id="@+id/button5"
+            style="@style/btn"
+            android:onClick="clicked" />
+
+        <Button
+            android:id="@+id/button6"
+            style="@style/btn"
+            android:onClick="clicked" />
+    </TableRow>
+
+    <TableRow
+        style="@style/row"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp">
+
+        <Button
+            android:id="@+id/button7"
+            style="@style/btn"
+            android:onClick="clicked" />
+
+        <Button
+            android:id="@+id/button8"
+            style="@style/btn"
+            android:onClick="clicked" />
+
+        <Button
+            android:id="@+id/button9"
+            style="@style/btn"
+            android:onClick="clicked" />
+    </TableRow>
+
+
+</TableLayout>
